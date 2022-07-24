@@ -6,13 +6,19 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [],
-				"name": "getA",
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "val1",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "val2",
+						"type": "uint8"
+					}
+				],
+				"name": "add",
 				"outputs": [
 					{
 						"internalType": "uint8",
@@ -20,20 +26,79 @@
 						"type": "uint8"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
 						"internalType": "uint8",
-						"name": "_a",
+						"name": "val1",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "val2",
 						"type": "uint8"
 					}
 				],
-				"name": "setA",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"name": "div",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "val1",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "val2",
+						"type": "uint8"
+					}
+				],
+				"name": "mul",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "val1",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "val2",
+						"type": "uint8"
+					}
+				],
+				"name": "sub",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -50,7 +115,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/solidity-class-1.sol": "task1"
+			"contracts/calculator.sol": "task1"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -64,12 +129,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/solidity-class-1.sol": {
-			"keccak256": "0xbbc6a0826674d4de93068336c1f5c66e73c092384075044ce8dcb7117cd1154a",
+		"contracts/calculator.sol": {
+			"keccak256": "0x6feffb4ebde50df4134a559cd650dfa355ede4c379ed1bb5d3da9fcce3816d27",
 			"license": "Unlicensed",
 			"urls": [
-				"bzz-raw://782214e9561473289cafa1b6441cddb647538f22b8ffb85d57b0ea1a99ee6b0e",
-				"dweb:/ipfs/QmWf14KS3146bB4K1m54UfvVNtjDrB9WAFs3z63CtHjTGX"
+				"bzz-raw://1beeb3f118bcdd515df0fd0cb025131eb547d6fd72b4e62817df6608b642291d",
+				"dweb:/ipfs/QmYjz2rvK492sQTou5dKvy2q2YzL4rXSPDRbFBxGR1oYZi"
 			]
 		}
 	},
