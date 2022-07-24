@@ -6,99 +6,196 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
 				"inputs": [
 					{
-						"internalType": "uint8",
-						"name": "val1",
-						"type": "uint8"
+						"indexed": false,
+						"internalType": "string",
+						"name": "",
+						"type": "string"
 					},
 					{
-						"internalType": "uint8",
-						"name": "val2",
-						"type": "uint8"
+						"indexed": false,
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
-				"name": "add",
+				"name": "studentReg",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "book_info",
 				"outputs": [
 					{
-						"internalType": "uint8",
+						"internalType": "string",
 						"name": "",
-						"type": "uint8"
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getData",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
-						"internalType": "uint8",
-						"name": "val1",
-						"type": "uint8"
-					},
-					{
-						"internalType": "uint8",
-						"name": "val2",
-						"type": "uint8"
+						"internalType": "address",
+						"name": "_id",
+						"type": "address"
 					}
 				],
-				"name": "div",
+				"name": "getStudentData",
 				"outputs": [
 					{
-						"internalType": "uint8",
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "fame",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "id",
+								"type": "address"
+							}
+						],
+						"internalType": "struct task1.student",
 						"name": "",
-						"type": "uint8"
+						"type": "tuple"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "get_details",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "setBalance",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "setData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
-						"internalType": "uint8",
-						"name": "val1",
-						"type": "uint8"
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
 					},
 					{
-						"internalType": "uint8",
-						"name": "val2",
-						"type": "uint8"
-					}
-				],
-				"name": "mul",
-				"outputs": [
+						"internalType": "string",
+						"name": "_parentName",
+						"type": "string"
+					},
 					{
-						"internalType": "uint8",
-						"name": "",
-						"type": "uint8"
+						"internalType": "address",
+						"name": "_id",
+						"type": "address"
 					}
 				],
-				"stateMutability": "pure",
+				"name": "setStruct",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
-						"internalType": "uint8",
-						"name": "val1",
-						"type": "uint8"
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
 					},
 					{
-						"internalType": "uint8",
-						"name": "val2",
-						"type": "uint8"
-					}
-				],
-				"name": "sub",
-				"outputs": [
+						"internalType": "string",
+						"name": "writer",
+						"type": "string"
+					},
 					{
-						"internalType": "uint8",
-						"name": "",
-						"type": "uint8"
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"name": "set_book_detail",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -115,7 +212,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/calculator.sol": "task1"
+			"contracts/solidity-class-2.sol": "task1"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -129,12 +226,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/calculator.sol": {
-			"keccak256": "0x6feffb4ebde50df4134a559cd650dfa355ede4c379ed1bb5d3da9fcce3816d27",
+		"contracts/solidity-class-2.sol": {
+			"keccak256": "0x32030baf21dff7645c838fe8076c484ed68ef0298764649391de681d3fd81b70",
 			"license": "Unlicensed",
 			"urls": [
-				"bzz-raw://1beeb3f118bcdd515df0fd0cb025131eb547d6fd72b4e62817df6608b642291d",
-				"dweb:/ipfs/QmYjz2rvK492sQTou5dKvy2q2YzL4rXSPDRbFBxGR1oYZi"
+				"bzz-raw://75efdb628a7ef344b247426da0cd612aef306a347ed126ff2d3d21c71f5bf77a",
+				"dweb:/ipfs/QmfYc3TtviPML1KB7JYW1QzuaVNAuSUZr7q4rSBEFNr5px"
 			]
 		}
 	},
