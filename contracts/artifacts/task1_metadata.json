@@ -1,0 +1,77 @@
+{
+	"compiler": {
+		"version": "0.8.15+commit.e14f2714"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getA",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "_a",
+						"type": "uint8"
+					}
+				],
+				"name": "setA",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/solidity-class-1.sol": "task1"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/solidity-class-1.sol": {
+			"keccak256": "0xbbc6a0826674d4de93068336c1f5c66e73c092384075044ce8dcb7117cd1154a",
+			"license": "Unlicensed",
+			"urls": [
+				"bzz-raw://782214e9561473289cafa1b6441cddb647538f22b8ffb85d57b0ea1a99ee6b0e",
+				"dweb:/ipfs/QmWf14KS3146bB4K1m54UfvVNtjDrB9WAFs3z63CtHjTGX"
+			]
+		}
+	},
+	"version": 1
+}
